@@ -30,12 +30,13 @@ body{
 .header2 {
     grid-area: hd;
     background-color: brown;
-    
+    z-index: 10;
 }
 
 .main2 {
     grid-area: mn;
     background-color: antiquewhite;
+    z-index: 10;
 }
 
 .article2 {
@@ -43,13 +44,62 @@ body{
     background-color: aquamarine;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    z-index: 0;
+}
+
+.article2 #arrowleft {
+    width: 20px;
+    height: 50px;
+    background-color: brown;
+    cursor: pointer;
+    display: inline;
 }
 
 .article2 #beverage1 {
-    width: 100%;
+    width: 80%;
     height: 90%;
     background-color: blueviolet;
     margin: 10px;
+    position: relative;
+    left: 0px;
+    transition: left 1s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: -10;
     
+}
+
+.article2 #beverage2 {
+    width: 0%;
+    height: 90%;
+    background-color: blueviolet;
+    margin: 10px;
+    position: relative;
+    right: -900px;
+    transition: right 1s;
+    
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: -10;
+
+    
+}
+
+.article2 #arrowright {
+    width: 20px;
+    height: 50px;
+    background-color: brown;
+    cursor: pointer;
+    display: inline;
+}
+
+.article2 #beverage1.show{
+    left: -900px;
+    
+    background-color: aqua;
+}
+
+.article2 #beverage2.show2{
+    right: 0px;
+    width: 80%;
+   
 }
