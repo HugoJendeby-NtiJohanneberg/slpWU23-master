@@ -1,4 +1,4 @@
-let button = document.querySelector("#arrowleft").addEventListener("click", showmenu);
+let button = document.querySelector(".selector").addEventListener("click", showmenu);
 
 
 function showmenu(){
@@ -8,4 +8,5 @@ function showmenu(){
 
     let bev2 = document.querySelector("#beverage2");
     bev2.classList.toggle("show2");
+
 }
