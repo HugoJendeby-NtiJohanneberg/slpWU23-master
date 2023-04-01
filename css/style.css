@@ -42,35 +42,28 @@ body{
 .article2 {
     grid-area: ar;
     background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 0;
+
+    position: relative;
+    z-index: -200;
 }
 
-.article2 #arrowleft {
-    width: 20px;
-    height: 50px;
-    background-color: brown;
-   
-    cursor: pointer;
-    display: inline;
-}
 
-.article2 #beverage1 {
-    width: 80%;
-    height: 90%;
+
+#beverage1 {
+    width: 40%;
+    height: 600px;
     background-color: blueviolet;
     margin: 0px;
     position: relative;
-    left: 0px;
+    left: 20%;
+    top: -50%;
     transition: left 1s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: -10;
     
 }
 
-.article2 #beverage2 {
+#beverage2 {
     width: 80%;
     height: 90%;
     background-color: blueviolet;
@@ -85,30 +78,24 @@ body{
 
 .selector {
     background-color: green;
-    width: 200px;
-    height: 200px;
+    width: 25vw;
+    height: 25vw;
     position: absolute;
-    right: 15%;
-    top: 90%;
-    z-index: 10;
+    right: calc(12.5vw);
+    top: calc(-12.5vw);
+    z-index: 200;
     border-radius: 50%;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-
-}
-
-.article2 #arrowright {
-    width: 20px;
-    height: 50px;
-    background-color: brown;
     cursor: pointer;
-    display: inline;
+
 }
 
-.article2 #beverage1.show{
-    left: -900px;
+
+
+#beverage1.show{
+    left: 200px;
     width: 80%;
-    background-color: aqua;
-    
+    background-color: aqua; 
 }
 
 .article2 #beverage2.show2{
