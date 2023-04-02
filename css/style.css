@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=IM+Fell+English+SC&family=Manrope&display=swap');
+
 body{
     margin: 0px;
+    background-color: rgb(43, 25, 25);
 }
 
 
@@ -13,6 +16,7 @@ body{
     "g2"
     "g3"
     "g4";
+
 }
 
 /* Starthemsida */
@@ -45,64 +49,110 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
     grid-template-areas: 
-    "hd ar"
+    "hd2 ar"
     "mn ar";
 }
 
 .header2 {
-    grid-area: hd;
-    background-color: brown;
+    grid-area: hd2;
+    background-color: rgb(200, 172, 140);
     z-index: -10;
+    margin: 10px;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .main2 {
     grid-area: mn;
-    background-color: antiquewhite;
+    background-color: rgb(200, 172, 140);
     z-index: -10;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#porridge {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+#milkshake {
+    font-family: 'Alegreya Sans', sans-serif;   
+}
+
+#beans {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.disnone{
+    display: none;
+}
+
+.dis{
+    display: block;
 }
 
 .article2 {
     grid-area: ar;
-    background-color: aquamarine;
+    
 
     position: relative;
     z-index: 0;
 }
 
+#product1 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 40px;
+}
+
+#product2 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 40px;
+}
+
+#product3 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 40px;
+}
 
 
 #beverage1 {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    background-color: blueviolet;
+    background-image: url(/img/beans.jpg);
+    background-color: red;
+    background-size: cover;
     margin: 0px;
     position: relative;
-    left: 5vw;
+    left: 2vw;
     top: 0%;
     transition: left 1s;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
-    
+    border-radius: 10px; 
 }
 
 #beverage2 {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    background-color: greenyellow;
+    background-image: url(/img/porridge.jpg);
+    background-size: cover;
     margin: 0px;
     position: relative;
-    left: 10vw;
+    left: 4vw;
     top: -90vh;
     transition: left 1s;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 11;
-
+    border-radius: 10px;
 }
 
 #beverage3 {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    background-color: bisque;
+    background-image: url(/img/beverage.jpg);
+    background-size: cover;
     margin: 0px;
     position: relative;
     left: 0vw;
@@ -110,11 +160,12 @@ body{
     transition: left 1s;
     box-shadow: -10px 0px 21px 0px rgba(0,0,0,0.75);
     z-index: 8;
+    border-radius: 10px;
 
 }
 
 .selector {
-    background-color: green;
+    background-color:  rgb(200, 172, 140);
     width: 25vw;
     height: 25vw;
     position: absolute;
@@ -135,72 +186,71 @@ body{
 
 #beverage3.show2{
     left: 20vw;
-    width: 80%;
+   
     z-index: 12;
 }
 
 #beverage3.hide{
-    left: 10vw;
+    left: 4vw;
     z-index: 40;
-    width: 80%;
+    
 
 }
 
 #beverage3.hide2{
     left: 2vw;
-    width: 80%;
+   
     
 }
 
 #beverage2.show{
     left: -20vw;
-    width: 80%;
+  
     z-index: 8;
 
 }
 
 #beverage2.show2{
     left: 20vw;
-    width: 80%;
+
     
 }
 
 #beverage2.hide{
-    left: 10vw;
+    left: 4vw;
     z-index: 40;
-    width: 80%;
+
 
 }
 
 #beverage2.hide2{
     left: 0vw;
-    width: 80%;
+ 
     z-index: 8;
     
 }
 
 #beverage1.show{
     left: -20vw;
-    width: 80%;
+
   
 }
 
 #beverage1.show2{
     left: 20vw;
-    width: 80%;
 
 }
 
 #beverage1.hide{
     left: 4vw;
     z-index: 40;
-    width: 80%;
+
   
 }
 
 #beverage1.hide2{
     left: 2vw;
-    width: 80%;
+
     
 }
 
@@ -210,9 +260,36 @@ body{
     grid-area: g3;
     display: grid;
     height: 100vh;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns:  100%;
+    grid-template-rows: 5% 20% 75%;
     grid-template-areas: 
-    "hd ar"
-    "mn ar";
+    "dv3 dv3"
+    "hd3 hd3"
+    "dv4 dv4";
+}
+
+.littleheader {
+    padding-left: 30px;
+    grid-area: dv3;
+    background-color: red;
+}
+
+.welcomeh {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.title {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 50px;
+}
+
+.header3 {
+    grid-area: hd3;
+    background-color: blue;
+    padding-left: 30px;
+}
+
+.abtuscontent {
+    grid-area: dv4;
+    background-color: green;
 }

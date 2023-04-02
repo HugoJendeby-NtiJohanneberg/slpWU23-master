@@ -1,7 +1,13 @@
 let button = document.querySelector(".selector").addEventListener("click", showmenu);
 let i = 0
+let porridge = document.querySelector("#porridge");
+let milkshake = document.querySelector("#milkshake");
+let beans = document.querySelector("#beans");
+milkshake.classList.add("disnone");
+beans.classList.add("disnone");
 
-
+product2.classList.add("disnone");
+product3.classList.add("disnone");
 
 function showmenu(){
     console.log("huh")
@@ -16,6 +22,11 @@ function showmenu(){
     
         bev3.classList.add("show");
         bev2.classList.add("show2");
+
+        porridge.classList.add("disnone");
+        milkshake.classList.add("dis");
+        product2.classList.add("dis");
+        product1.classList.add("disnone");
     
         setTimeout(function() {
             bev3.classList.remove("show");
@@ -34,6 +45,11 @@ function showmenu(){
         
         bev.classList.add("show");
         bev3.classList.add("show2");
+
+        milkshake.classList.remove("dis");
+        beans.classList.add("dis");
+        product3.classList.add("dis");
+        product2.classList.remove("dis");
     
         setTimeout(function() {
             bev.classList.remove("show");
@@ -50,6 +66,12 @@ function showmenu(){
 
         bev2.classList.remove("hide2");
         bev2.classList.add("show");
+
+        beans.classList.remove("dis");
+        product3.classList.remove("dis");
+        product1.classList.remove("disnone");
+        porridge.classList.remove("disnone");
+
 
         setTimeout(function() {
             bev2.classList.remove("show");
