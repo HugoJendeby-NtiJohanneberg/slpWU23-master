@@ -15,7 +15,29 @@ body{
     "g4";
 }
 
+/* Starthemsida */
+#container1{
+    grid-area: g1;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "hd1 hd1"
+    "nav1 gob";
+}
 
+.masterheader{
+    grid-area: hd1;
+    background-color: red;
+}
+
+.w_nav{
+    grid-area: nav1;
+    background-color: blue;
+}
+
+/* Produkthemsida */
 #container2{
     grid-area: g2;
     display: grid;
@@ -130,10 +152,24 @@ body{
     
 }
 
+#beverage2.show{
+    left: -20vw;
+    width: 80%;
+    z-index: 8;
+
+}
+
 #beverage2.show2{
     left: 20vw;
     width: 80%;
     
+}
+
+#beverage2.hide{
+    left: 10vw;
+    z-index: 40;
+    width: 80%;
+
 }
 
 #beverage2.hide2{
@@ -150,7 +186,7 @@ body{
 }
 
 #beverage1.show2{
-    left: -20vw;
+    left: 20vw;
     width: 80%;
 
 }
@@ -166,4 +202,17 @@ body{
     left: 2vw;
     width: 80%;
     
+}
+
+/* Produkthemsida */
+
+#container3{
+    grid-area: g3;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "hd ar"
+    "mn ar";
 }

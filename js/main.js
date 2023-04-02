@@ -1,6 +1,8 @@
 let button = document.querySelector(".selector").addEventListener("click", showmenu);
 let i = 0
 
+
+
 function showmenu(){
     console.log("huh")
     let bev = document.querySelector("#beverage1");
@@ -42,7 +44,31 @@ function showmenu(){
 
         i++;
     }
+    else if (i == 2){
+        bev.classList.remove("hide");
+        bev.classList.add("show2");
 
+        bev2.classList.remove("hide2");
+        bev2.classList.add("show");
+
+        setTimeout(function() {
+            bev2.classList.remove("show");
+            bev.classList.remove("show2");
+            bev2.classList.add("hide");
+            bev.classList.add("hide2");
+        }, 1000);
+
+        
+        setTimeout(function() {
+            bev.classList.remove("hide2");
+            bev2.classList.remove("hide");
+            bev3.classList.remove("hide2");
+
+
+        }, 2000);
+
+        i = 0
+    }
     
     console.log(i)
 }
