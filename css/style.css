@@ -254,14 +254,14 @@ body{
     
 }
 
-/* Produkthemsida */
+/* Om oss */
 
 #container3{
     grid-area: g3;
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 5% 20% 75%;
+    grid-template-rows: 5% 10% 85%;
     grid-template-areas: 
     "dv3 dv3"
     "hd3 hd3"
@@ -269,13 +269,16 @@ body{
 }
 
 .littleheader {
-    padding-left: 30px;
+    padding-left: 20vw;
     grid-area: dv3;
     background-color: red;
+    
 }
 
 .welcomeh {
     font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    
 }
 
 .title {
@@ -285,11 +288,20 @@ body{
 
 .header3 {
     grid-area: hd3;
+    display: flex;
+    align-items: center;
     background-color: blue;
-    padding-left: 30px;
+    padding-left: 20vw;
 }
 
 .abtuscontent {
     grid-area: dv4;
     background-color: green;
+    
 }
+
+#about_us_p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+}
+
