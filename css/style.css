@@ -261,7 +261,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 5% 10% 85%;
+    grid-template-rows: 5% 5% 90%;
     grid-template-areas: 
     "dv3 dv3"
     "hd3 hd3"
@@ -269,39 +269,62 @@ body{
 }
 
 .littleheader {
-    padding-left: 20vw;
     grid-area: dv3;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    background-color: rgb(200, 172, 140);
+    padding-left: 10vw;
     
 }
 
-.welcomeh {
+.welcome_h {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
+    font-size: 5vw;
     
 }
 
 .title {
     font-family: 'IM Fell English SC', serif;
-    font-size: 50px;
+    font-size: 7vw;
 }
+
+/* ändrade abtus_p till p för att streamlina paragrafer */
+
+p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: calc((3vw + 3vh)/2);
+}
+
 
 .header3 {
     grid-area: hd3;
     display: flex;
     align-items: center;
-    background-color: blue;
-    padding-left: 20vw;
+    background-color: rgb(200, 172, 140);
+    padding-left: 10vw;
+
 }
 
 .abtuscontent {
     grid-area: dv4;
-    background-color: green;
+    background-color: rgb(200, 172, 140);
+    padding: 0vw 10vw;
+    
     
 }
 
-#about_us_p {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
+/* ändrade abtus_p till p för att streamlina paragrafer */
+
+/* Our Locations and contact information */
+#container4 {
+    grid-area: g4;
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  100%;
+    grid-template-rows: 5% 5% 90%;
+    grid-template-areas: 
+    "dv3 dv3"
+    "hd3 hd3"
+    "dv4 dv4";
 }
 
