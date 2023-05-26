@@ -2,7 +2,7 @@
 
 body{
     margin: 0px;
-    background-color: rgb(43, 25, 25);
+    background-color: rgb(100, 40, 40);
 }
 
 
@@ -55,7 +55,7 @@ body{
 
 .header2 {
     grid-area: hd2;
-    background-color: rgb(200, 172, 140);
+    background-color: rgb(83, 48, 45);
     z-index: -10;
     margin: 10px;
     border-radius: 10px; 
@@ -272,7 +272,7 @@ body{
     grid-area: dv3;
     display: flex;
     align-items: center;
-    background-color: rgb(200, 172, 140);
+    background-color: rgba(255, 187, 0, 0.316);
     padding-left: 10vw;
     
 }
@@ -300,14 +300,14 @@ p {
     grid-area: hd3;
     display: flex;
     align-items: center;
-    background-color: rgb(200, 172, 140);
+    background-color: rgba(255, 187, 0, 0.316);
     padding-left: 10vw;
 
 }
 
 .abtuscontent {
     grid-area: dv4;
-    background-color: rgb(200, 172, 140);
+    background-color: rgba(255, 187, 0, 0.316);
     padding: 0vw 10vw;
     
     
@@ -321,10 +321,71 @@ p {
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 5% 5% 90%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: 
-    "dv3 dv3"
-    "hd3 hd3"
-    "dv4 dv4";
+    "hd4"
+    "mn3";
 }
 
+.header4 {
+    grid-area: hd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+.main3 {
+    grid-area: mn3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.location1 {
+    background-color: rgb(193, 189, 182);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    margin: 0px;
+    box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
+    border-radius: 10px; 
+}
+
+img {
+    height: 60%;
+    width: 100%;
+}
+
+.location2 {
+    background-color: rgb(193, 189, 182);
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
+    border-radius: 10px; 
+}
+
+.location3 {
+    background-color: rgb(193, 189, 182);
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    margin: 0px;
+    box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
+    border-radius: 10px; 
+}
+
+
+
+li {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: calc((3vw + 3vh)/2);
+}
