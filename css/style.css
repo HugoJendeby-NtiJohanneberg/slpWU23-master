@@ -46,11 +46,12 @@ body{
     grid-area: g2;
     display: grid;
     height: 100vh;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
     grid-template-areas: 
-    "hd2 ar"
-    "mn ar";
+    "hd2"
+    "ar"
+    "mn";
 }
 
 .header2 {
@@ -95,8 +96,6 @@ body{
 
 .article2 {
     grid-area: ar;
-    
-
     position: relative;
     z-index: 0;
 }
@@ -118,14 +117,14 @@ body{
 
 
 #beverage1 {
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    height: 100%;
     background-image: url(/img/beans.jpg);
     background-color: red;
     background-size: cover;
     margin: 0px;
     position: relative;
-    left: 2vw;
+    left: 15vw;
     top: 0%;
     transition: left 1s;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
@@ -134,14 +133,15 @@ body{
 }
 
 #beverage2 {
-    width: 90%;
-    height: 90%;
+    
+    width: 60%;
+    height: 100%;
     background-image: url(/img/porridge.jpg);
     background-size: cover;
     margin: 0px;
     position: relative;
-    left: 4vw;
-    top: -90vh;
+    left: 20vw;
+    top: -60vh;
     transition: left 1s;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 11;
@@ -149,14 +149,15 @@ body{
 }
 
 #beverage3 {
-    width: 90%;
-    height: 90%;
+    
+    width: 60%;
+    height: 100%;
     background-image: url(/img/beverage.jpg);
     background-size: cover;
     margin: 0px;
     position: relative;
-    left: 0vw;
-    top: -180vh;
+    left: 10vw;
+    top: -120vh;
     transition: left 1s;
     box-shadow: -10px 0px 21px 0px rgba(0,0,0,0.75);
     z-index: 8;
@@ -179,79 +180,88 @@ body{
 }
 
 #beverage3.show{
-    left: -20vw;
+    left: 0vw;
     width: 80%;
 
 }
 
 #beverage3.show2{
-    left: 20vw;
+    left: 40vw;
    
     z-index: 12;
 }
 
 #beverage3.hide{
-    left: 4vw;
+    left: 20vw;
     z-index: 40;
     
 
 }
 
 #beverage3.hide2{
-    left: 2vw;
+    left: 15vw;
    
     
 }
 
 #beverage2.show{
-    left: -20vw;
+    left: 0vw;
   
     z-index: 8;
 
 }
 
 #beverage2.show2{
-    left: 20vw;
+    left: 40vw;
 
     
 }
 
 #beverage2.hide{
-    left: 4vw;
+    left: 20vw;
     z-index: 40;
 
 
 }
 
 #beverage2.hide2{
-    left: 0vw;
+    left: 10vw;
  
-    z-index: 8;
+    z-index: 0;
+    
+}
+
+#beverage2.hide3{
+    left: 15vw;
+ 
+    z-index: 15;
     
 }
 
 #beverage1.show{
-    left: -20vw;
+    left: 0vw;
 
   
 }
 
 #beverage1.show2{
-    left: 20vw;
+    left: 40vw;
 
 }
 
 #beverage1.hide{
-    left: 4vw;
+    left: 20vw;
     z-index: 40;
 
   
 }
 
 #beverage1.hide2{
-    left: 2vw;
+    left: 15vw; 
+}
 
-    
+.slightshift{
+    left: 10vw; 
 }
 
 /* Om oss */
@@ -261,56 +271,46 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 5% 5% 90%;
+    grid-template-rows: 10% 90%;
     grid-template-areas: 
-    "dv3 dv3"
     "hd3 hd3"
     "dv4 dv4";
 }
 
-.littleheader {
-    grid-area: dv3;
+.header3 {
+    grid-area: hd3;
+    background-color: rgb(120, 78, 73);
     display: flex;
-    align-items: center;
-    background-color: rgba(255, 187, 0, 0.316);
+    flex-flow: column;
+    justify-content: center;
     padding-left: 10vw;
-    
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
 }
 
 .welcome_h {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 5vw;
-    
+    font-size: calc((5vw + 5vh)/4);
+    margin: 0px;
 }
 
 .title {
     font-family: 'IM Fell English SC', serif;
-    font-size: 7vw;
+    font-size: calc((7vw + 7vh)/4);
+    margin: 0px;
 }
 
 /* ändrade abtus_p till p för att streamlina paragrafer */
+.abtuscontent {
+    grid-area: dv4;
+    background-color: rgb(193, 189, 182);
+    padding: 0vw 10vw;
+}
 
 p {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: calc((3vw + 3vh)/2);
-}
-
-
-.header3 {
-    grid-area: hd3;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 187, 0, 0.316);
-    padding-left: 10vw;
-
-}
-
-.abtuscontent {
-    grid-area: dv4;
-    background-color: rgba(255, 187, 0, 0.316);
-    padding: 0vw 10vw;
-    
-    
 }
 
 /* ändrade abtus_p till p för att streamlina paragrafer */
@@ -321,7 +321,7 @@ p {
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 10% 90%;
     grid-template-areas: 
     "hd4"
     "mn3";
@@ -332,7 +332,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
+    background-color: rgb(120, 78, 73);
 }
 
 .main3 {
@@ -348,39 +351,51 @@ p {
     background-color: rgb(193, 189, 182);
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
     padding: 10px;
     width: 80%;
     height: 80%;
     margin: 0px;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
-    border-radius: 10px; 
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
 }
 
 img {
     height: 60%;
     width: 100%;
+    border-radius: 100px 100px 10px 10px; 
 }
 
 .location2 {
     background-color: rgb(193, 189, 182);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     padding: 10px;
     width: 80%;
     height: 80%;
     margin: 10px;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
-    border-radius: 10px; 
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
 }
 
 .location3 {
     background-color: rgb(193, 189, 182);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     padding: 10px;
     width: 80%;
     height: 80%;
     margin: 0px;
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
-    border-radius: 10px; 
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
 }
 
 

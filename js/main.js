@@ -17,11 +17,12 @@ function showmenu(){
 
     if (i == 0) {
 
-        bev3.classList.remove("hide");
+        
         bev2.classList.remove("hide2");
     
         bev3.classList.add("show");
         bev2.classList.add("show2");
+        bev.classList.add("show2");
 
         porridge.classList.add("disnone");
         milkshake.classList.add("dis");
@@ -31,20 +32,25 @@ function showmenu(){
         setTimeout(function() {
             bev3.classList.remove("show");
             bev2.classList.remove("show2");
+            bev.classList.remove("show2");
     
             bev3.classList.add("hide");
             bev2.classList.add("hide2");
+            bev.classList.add("slightshift");
         }, 1000);
         
         i++;
     }
     else if (i == 1){
         
-       
+        bev.classList.remove("slightshift");
         bev3.classList.remove("hide");
+        bev2.classList.remove("hide2");
         
         bev.classList.add("show");
+        bev2.classList.add("show2");
         bev3.classList.add("show2");
+        
 
         milkshake.classList.remove("dis");
         beans.classList.add("dis");
@@ -54,8 +60,12 @@ function showmenu(){
         setTimeout(function() {
             bev.classList.remove("show");
             bev3.classList.remove("show2");
+            bev2.classList.remove("show2");
+
             bev.classList.add("hide");
+            bev2.classList.add("hide2");
             bev3.classList.add("hide2");
+
         }, 1000);
 
         i++;
