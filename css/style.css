@@ -33,7 +33,16 @@ body{
 
 .masterheader{
     grid-area: hd1;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 78, 73);
+    box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
+    margin: 10px;
+
 }
 
 .w_nav{
@@ -43,7 +52,7 @@ body{
 
 /* Produkthemsida */
 #container2{
-    grid-area: g2;
+    grid-area: g3;
     display: grid;
     height: 100vh;
     grid-template-columns: 100%;
@@ -56,13 +65,17 @@ body{
 
 .header2 {
     grid-area: hd2;
-    background-color: rgb(83, 48, 45);
+    background-color: rgb(120, 78, 73);
     z-index: -10;
     margin: 10px;
     border-radius: 10px; 
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
+    margin: 10px;
     
 }
 
@@ -148,8 +161,7 @@ body{
     border-radius: 10px;
 }
 
-#beverage3 {
-    
+#beverage3 {  
     width: 60%;
     height: 100%;
     background-image: url(/img/beverage.jpg);
@@ -170,8 +182,10 @@ body{
     width: 25vw;
     height: 25vw;
     position: absolute;
-    right: calc(12.5vw);
-    top: calc(100vh - 12.5vw);
+    
+    left: 45vw;
+    
+    top: calc(218vh - 12.5vw);
     z-index: 200;
     border-radius: 50%;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
@@ -267,7 +281,7 @@ body{
 /* Om oss */
 
 #container3{
-    grid-area: g3;
+    grid-area: g2;
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
@@ -287,17 +301,24 @@ body{
     border-radius: 100px;
     border: double;
     border-width: 7px 7px;
+    margin: 10px;
 }
 
-.welcome_h {
+h3 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: calc((5vw + 5vh)/4);
     margin: 0px;
 }
 
-.title {
+h2 {
     font-family: 'IM Fell English SC', serif;
     font-size: calc((7vw + 7vh)/4);
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: calc((14vw + 14vh)/4);
     margin: 0px;
 }
 
@@ -306,6 +327,9 @@ body{
     grid-area: dv4;
     background-color: rgb(193, 189, 182);
     padding: 0vw 10vw;
+    border-radius: 100px;
+    border: double;
+    border-width: 7px 7px;
 }
 
 p {
