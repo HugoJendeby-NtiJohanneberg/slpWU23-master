@@ -48,7 +48,7 @@ function showmenu(){
         bev2.classList.remove("hide2");
         
         bev.classList.add("show");
-        bev2.classList.add("show2");
+        bev2.classList.add("show3");
         bev3.classList.add("show2");
         
 
@@ -59,11 +59,12 @@ function showmenu(){
     
         setTimeout(function() {
             bev.classList.remove("show");
+            bev2.classList.remove("show3");
             bev3.classList.remove("show2");
-            bev2.classList.remove("show2");
+            
 
             bev.classList.add("hide");
-            bev2.classList.add("hide2");
+            bev2.classList.add("slightshift");
             bev3.classList.add("hide2");
 
         }, 1000);
@@ -72,10 +73,12 @@ function showmenu(){
     }
     else if (i == 2){
         bev.classList.remove("hide");
-        bev.classList.add("show2");
+        bev2.classList.remove("slightshift");
+        bev3.classList.remove("hide2");
 
-        bev2.classList.remove("hide2");
+        bev.classList.add("show2");
         bev2.classList.add("show");
+        bev3.classList.add("show2")
 
         beans.classList.remove("dis");
         product3.classList.remove("dis");
@@ -84,10 +87,15 @@ function showmenu(){
 
 
         setTimeout(function() {
-            bev2.classList.remove("show");
             bev.classList.remove("show2");
-            bev2.classList.add("hide");
+            bev2.classList.remove("show");
+            bev3.classList.remove("show2");
+            
+
             bev.classList.add("hide2");
+            bev2.classList.add("hide");
+            bev3.classList.add("hide2");
+            
         }, 1000);
 
         
