@@ -57,7 +57,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 60% 30%;
+    grid-template-rows: 15% 60% 25%;
     grid-template-areas: 
     "hd2"
     "ar"
@@ -296,7 +296,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 15% 85%;
     grid-template-areas: 
     "hd3 hd3"
     "dv4 dv4";
@@ -357,7 +357,7 @@ p {
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 15% 90%;
     grid-template-areas: 
     "hd4"
     "mn3";
@@ -470,27 +470,6 @@ ul {
     
 }
 
-@media (min-width: 1500px) {
-    .location1 {
-        width: 1200px;
-        height: 1500px;
-
-    }
-    
-
-    
-    .location2 {
-
-        width: 1200px;
-        height: 1500px;
-
-    }
-    
-    .location3 {
-        width: 1200px;
-        height: 1500px;
-    }
-}
 
 @media (min-width: 6000px) {
     .location1 {
