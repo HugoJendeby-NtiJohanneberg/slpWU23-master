@@ -1,7 +1,7 @@
 let button = document.querySelector(".selector").addEventListener("click", showmenu);
 let i = 0
 let porridge = document.querySelector("#porridge");
-let milkshake = document.querySelector("#milkshake");
+let milkshake = document.querySelector("#sirupdrink");
 let beans = document.querySelector("#beans");
 milkshake.classList.add("disnone");
 beans.classList.add("disnone");

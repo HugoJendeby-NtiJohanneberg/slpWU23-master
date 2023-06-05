@@ -4,6 +4,8 @@ body{
     margin: 0px;
     background-color: rgb(100, 40, 40);
     border: dotted;
+    border-width: 20px 20px;
+
 }
 
 
@@ -30,6 +32,8 @@ body{
     grid-template-areas: 
     "hd1 hd1"
     "nav1 gob";
+    background-image: url(/img/barpic_final.jpg);
+    background-size: 100% 100%;
 }
 
 .masterheader{
@@ -37,12 +41,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(120, 78, 73);
+    background-color: rgb(217, 177, 149);
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
+    border-width: calc((1vw + 1vh)/2);
     margin: 10px;
+    padding-left: 20vw;
 
 }
 
@@ -66,7 +71,7 @@ body{
 
 .header2 {
     grid-area: hd2;
-    background-color: rgb(120, 78, 73);
+    background-color:rgb(217, 177, 149);
     z-index: -10;
     margin: 10px;
     border-radius: 10px; 
@@ -75,31 +80,30 @@ body{
     justify-content: center;
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
+    border-width: calc((1vw + 1vh)/2);
     margin: 10px;
     
 }
 
 
-.main2 {
+.div2 {
     grid-area: mn;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(193, 189, 182);
+    
+    background-color:rgb(217, 177, 149);
     z-index: -10;
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
-    padding: 0vw 10vw 0vw 10vw;
-    margin: 2vh;
+    border-width: calc((1vw + 1vh)/2);
+    padding: 10vw 10vw 0vw 10vw;
+    margin: 0vw 5vw 0vh 5vw;
 }
 
 #porridge {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-#milkshake {
+#sirupdrink {
     font-family: 'Alegreya Sans', sans-serif;   
 }
 
@@ -184,21 +188,21 @@ body{
 }
 
 .selector {
-    background-color:  rgb(193, 189, 182);
-    width: 25vw;
-    height: 25vw;
-    position: absolute;
-    
-    left: 45vw;
-    
-    top: calc(218vh - 12.5vw);
+    background-color:  rgb(100, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((20vw + 20vh)/2);
+    height: calc((20vw + 20vh)/2);
+    position: absolute; 
+    left: calc(48% - calc((20vw + 20vh)/4));
+    top: 265vh;
     z-index: 200;
     border-radius: 50%;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     cursor: pointer;
     border: double;
-    border-width: 7px 7px;
-
+    border-width: calc((1vw + 1vh)/2);
 }
 
 #beverage3.show{
@@ -296,7 +300,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns:  100%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: 
     "hd3 hd3"
     "dv4 dv4";
@@ -304,50 +308,60 @@ body{
 
 .header3 {
     grid-area: hd3;
-    background-color: rgb(120, 78, 73);
+    background-color: rgb(217, 177, 149);
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding-left: 10vw;
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
-    margin: 10px;
+    border-width: calc((1vw + 1vh)/2);    
+    margin: 1vh;
 }
 
 h3 {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: calc((5vw + 5vh)/4);
+    font-size: calc((3vw + 3vh)/2);
     margin: 0px;
 }
 
 h2 {
     font-family: 'IM Fell English SC', serif;
-    font-size: calc((7vw + 7vh)/4);
+    font-size: calc((5vw + 5vh)/2);
     margin: 0px;
 }
 
 h1 {
     font-family: 'IM Fell English SC', serif;
-    font-size: calc((12vw + 12vh)/4);
+    font-size: calc((8vw + 8vh)/2);
     margin: 0px;
+}
+
+p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: calc((2vw + 2vh)/2);
+}
+
+li {
+    font-family: 'Alegreya Sans', sans-serif;
+    
+}
+
+ul {
+    font-size: calc((2vw + 2vh)/2);
 }
 
 /* ändrade abtus_p till p för att streamlina paragrafer */
 .abtuscontent {
     grid-area: dv4;
-    background-color: rgb(193, 189, 182);
+    background-color: rgb(217, 177, 149);
     padding: 3vh 10vw 0vw 10vw;
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
+    border-width: calc((1vw + 1vh)/2);
     margin: 2vh;
 }
 
-p {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: calc((3vw + 3vh)/2);
-}
 
 /* ändrade abtus_p till p för att streamlina paragrafer */
 
@@ -370,11 +384,12 @@ p {
     justify-content: center;
     border-radius: 100px;
     border: double;
-    border-width: 7px 7px;
-    background-color: rgb(120, 78, 73);
+    border-width: calc((1vw + 1vh)/2);
+    background-color: rgb(217, 177, 149);
+    margin: 1vh;
 }
 
-.main3 {
+.div3 {
     grid-area: mn3;
     display: flex;
     align-items: center;
@@ -393,7 +408,7 @@ img {
 }
 
 .locationcard {
-    background-color: rgb(193, 189, 182);
+    background-color: rgb(217, 177, 149);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -404,23 +419,17 @@ img {
     box-shadow: -10px 0px 21px -10px rgba(0,0,0,0.75);
     border-radius: calc((15vw + 15vh)/2);    
     border: double;
-    border-width: 7px 7px; 
+    border-width: calc((1vw + 1vh)/2); 
 }
 
-li {
-    font-family: 'Alegreya Sans', sans-serif;
-}
-
-ul {
-    font-size: calc((3vw + 3vh)/2);
-}
 
 @media (min-width: 768px){
+
     .locationcard {  
         width: calc((30vw + 30vh)/2);
         height: calc((50vw + 50vh)/2);
         border-radius: calc((9vw + 9vh)/2);
-        border-width: 0.5vw 0.5vw; 
+        
     }
 
     ul {
@@ -436,31 +445,31 @@ ul {
         border-bottom-right-radius: calc((3vw + 3vh)/2);
     }
     
-}
+    #container2{
+        grid-area: g3;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 85%;
+        grid-template-areas: 
+        "hd2 hd2"
+        "ar mn";
+    }
 
-@media (min-width: 6000px) {
-
-}
-
-@media (min-width: 6000px) {
-    .location1 {
-        width: 1900px;
-        height: 3000px;
-        padding: calc((4vw + 4vh)/2);
+    .div2 {
+        
+        padding: 0vw 2vw 0vw 2vw;
+        margin: 10vw 2vh 10vh 2vw;
     }
     
-
-    
-    .location2 {
-
-        width: 1900px;
-        height: 3000px;
-        padding: calc((4vw + 4vh)/2);
+    .selector {
+        left: calc(75% - calc((20vw + 20vh)/4));
+        top: 260vh;
     }
+
+    .masterheader{
+        padding-left: 0%;
     
-    .location3 {
-        width: 1900px;
-        height: 3000px;
-        padding: calc((4vw + 4vh)/2);
     }
+  
 }
