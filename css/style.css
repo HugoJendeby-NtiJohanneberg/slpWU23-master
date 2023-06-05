@@ -3,8 +3,7 @@
 body{
     margin: 0px;
     background-color: rgb(100, 40, 40);
-    border: dotted;
-    border-width: 20px 20px;
+   
 
 }
 
@@ -92,10 +91,10 @@ body{
     
     background-color:rgb(217, 177, 149);
     z-index: -10;
-    border-radius: 100px;
+    border-radius: calc((9vw + 9vh)/2);
     border: double;
     border-width: calc((1vw + 1vh)/2);
-    padding: 10vw 10vw 0vw 10vw;
+    padding: 10vw 4vw 0vw 4vw;
     margin: 0vw 5vw 0vh 5vw;
 }
 
@@ -196,7 +195,7 @@ body{
     height: calc((20vw + 20vh)/2);
     position: absolute; 
     left: calc(48% - calc((20vw + 20vh)/4));
-    top: 265vh;
+    top: 264vh;
     z-index: 200;
     border-radius: 50%;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
@@ -339,7 +338,7 @@ h1 {
 
 p {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: calc((2vw + 2vh)/2);
+    font-size: calc((3vw + 3vh)/2);
 }
 
 li {
@@ -348,7 +347,7 @@ li {
 }
 
 ul {
-    font-size: calc((2vw + 2vh)/2);
+    font-size: calc((3vw + 3vh)/2);
 }
 
 /* ändrade abtus_p till p för att streamlina paragrafer */
